@@ -9,7 +9,7 @@ This custom C library includes the following components:
 	- 11 additional functions are additional utilities not found in the standard C library or variations thereof.
 
 #### 32 Libc Functions
-#### Character Classification and Conversion Functions
+##### Character Classification and Conversion Functions
 
 		ft_isalpha: Checks if a character is an alphabetic letter.  
 		ft_isdigit: Checks if a character is a decimal digit.  
