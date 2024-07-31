@@ -9,6 +9,39 @@
 /*   Updated: 2024/06/25 18:34:12 by fyang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/* PSEUDOCODE
+ * FUNCTION ft_atoi takes 1 pointer *str
+ *      declare index variable for str[i]
+ *      declare counter variable 'n' for counting neg sign
+ *      declare int nb
+ *      declare int sign
+ *
+ *      initialise i to 0;
+ *      initialise n to 0;
+ *      initialise nb to 0;
+ *      initialise sign to 1;
+ *
+ *      1 WHILE (str[i] == ' ' (32), '\t' (9), '\r' (13), '\f' (12), '\n'(10),
+ *                               '\v' (11)) //whitespace per isspace
+ *              increment i
+ *      1 ENDWHILE
+ *        //deskcheck output (i) //continue to 2-if
+ *      2 IF str[i] == '-' OR str[i] == '+' //count nof signs
+ *              IF str[i] == '-'
+ *              increment n
+ *              3 IF  n % 2 == 1
+ *                      sign = -1
+ *              3 ELSE 
+ *                      sign = 1
+ *              3 ENDIF
+ *        increment i
+ *      2 ENDIF //desk check output sign
+ *      2 WHILE str[i] is numeric
+ *              set nb = nb * 10 + (str[i] - '0') to get int value
+ *              increment i
+ *      2 ENDWHILE
+ *      return (sign) * (nb)
+ *END FUNCTION */
 
 #include "libft.h"
 
@@ -56,37 +89,5 @@ int     main(void)
         printf("s4 integer value is: %d\n", ft_atoi(s4));
         printf("s5 integer value is: %d\n", ft_atoi(s5));
         return (0);
-}*/
-/*
- * FUNCTION ft_atoi takes 1 pointer *str
- *      declare index variable for str[i]
- *      declare counter variable 'n' for counting neg sign
- *      declare int nb
- *      declare int sign
- *
- *      initialise i to 0;
- *      initialise n to 0;
- *      initialise nb to 0;
- *      initialise sign to 1;
- *
- *      1 WHILE (str[i] == ' ' (32), '\t' (9), '\r' (13), '\f' (12), '\n'(10),
- *                               '\v' (11)) //whitespace per isspace
- *              increment i
- *      1 ENDWHILE
- *        //deskcheck output (i) //continue to 2-if
- *      2 IF str[i] == '-' OR str[i] == '+' //count nof signs
- *              IF str[i] == '-'
- *              increment n
- *              3 IF  n % 2 == 1
- *                      sign = -1
- *              3 ELSE 
- *                      sign = 1
- *              3 ENDIF
- *        increment i
- *      2 ENDIF //desk check output sign
- *      2 WHILE str[i] is numeric
- *              set nb = nb * 10 + (str[i] - '0') to get int value
- *              increment i
- *      2 ENDWHILE
- *      return (sign) * (nb)
- *END FUNCTION */
+}
+*/
