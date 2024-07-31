@@ -2,9 +2,9 @@
 
 This custom C library includes the following components:
 
-A Makefile to compile the library.  
-A header file libft.h, containing the prototypes for all functions and necessary includes.  
-A total of 43 custom C functions that do not call on external functions from C libraries except for write() and memory manipulation with malloc() and free().  
+* A Makefile to compile the library.  
+* A header file libft.h, containing the prototypes for all functions and necessary includes.  
+* A total of 43 custom C functions that do not call on external functions from C libraries except for write() and memory manipulation with malloc() and free().  
 	- 32 custom implementations of Libc C functions that have the same prototypes and behaviours as standard C library functions, but with the prefix ft_.  
 	- 11 additional functions are additional utilities not found in the standard C library or variations thereof.
 
